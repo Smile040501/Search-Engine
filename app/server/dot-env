@@ -1,0 +1,6 @@
+CLOUDID=""
+USERNAME="elastic"
+PASSWORD=""
+API_KEY=""
+LOCAL_ENV_PYTHON_INTERPRETER_PATH="/bin/python"
+PYTHON_SCRIPT_PATH="../../wiki_crawler/wiki_crawler/preProcess.py"

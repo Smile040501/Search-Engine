@@ -1,0 +1,25 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node --watch -r dotenv/config server.js dotenv_config_path=.env",
+        "gen-key": "node -r dotenv/config elasticsearch/createApiKey.js dotenv_config_path=.env",
+        "create-indices": "node -r dotenv/config elasticsearch/createIndices.js dotenv_config_path.env",
+        "ingest-data": "node -r dotenv/config elasticsearch/ingestData.js dotenv_config_path=.env"
+    },
+    "author": "Mayank Singla",
+    "license": "ISC",
+    "dependencies": {
+        "@elastic/elasticsearch": "^8.5.0",
+        "compression": "^1.7.4",
+        "express": "^4.18.2",
+        "helmet": "^6.0.1",
+        "hpp": "^0.2.3"
+    },
+    "devDependencies": {
+        "dotenv": "^16.0.3"
+    }
+}
